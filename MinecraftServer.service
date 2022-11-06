@@ -5,6 +5,5 @@ Description=Minecraft Server
 WantedBy=multi-user.target
 
 [Service]
-Type=simple
 ExecStart=~/minecraft/casually-chaotic/start.sh
 Restart=always
