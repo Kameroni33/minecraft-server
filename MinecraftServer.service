@@ -6,5 +6,5 @@ WantedBy=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=bash ~/minecraft/casually-chaotic/run-server.sh
+ExecStart=~/minecraft/casually-chaotic/start.sh
 Restart=always
