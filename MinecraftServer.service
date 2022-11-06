@@ -1,0 +1,10 @@
+[Unit]
+Description=Minecraft Server
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=bash ~/minecraft/casually-chaotic/run-server.sh
+Restart=always
