@@ -1,9 +1,8 @@
 [Unit]
-Description=Minecraft Server
+Description=minecraft server
+
+[Service]
+ExecStart=/bin/bash ~/minecraft/casually-chaotic/start.sh
 
 [Install]
 WantedBy=multi-user.target
-
-[Service]
-ExecStart=~/minecraft/casually-chaotic/start.sh
-Restart=always
