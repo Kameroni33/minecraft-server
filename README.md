@@ -2,6 +2,8 @@
 
 This repository is designed to streamline the process of setting up and running a Minecraft Server for Linux.
 
+**Verison:** 1.0.0
+
 ## Installation
 
 Clone the repository to your local computer
