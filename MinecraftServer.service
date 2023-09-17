@@ -1,8 +1,16 @@
 [Unit]
-Description=minecraft server
+Description=Minecraft Server
 
 [Service]
-ExecStart=/bin/bash ~/minecraft/casually-chaotic/start.sh
+Type=simple
+WorkingDirectory=/home/minecraft
+ExecStart=/bin/bash ./start.sh
+User=minecraft
+Restart=on-failure
+Sockets=MinecraftServer.socket
+StandardInput=socket
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
